@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jsnyder159/README-gen/issues"
   },
-  "homepage": "https://github.com/jsnyder159/README-gen#readme"
+  "homepage": "https://github.com/jsnyder159/README-gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.1"
+  }
 }
