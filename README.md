@@ -17,7 +17,7 @@
   
   ## Installation
   
-  NODE.js, fs, inquirer.
+  NODE.js, inquirer.
   
   
   ## Usage
@@ -51,7 +51,7 @@
   
   ## Tests
   
-  
+  [Screencastify Video of Working Project](https://watch.screencastify.com/v/iJwsQWzqTjORPxKEg7J1)
   
   
   ## Questions
