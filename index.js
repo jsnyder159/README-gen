@@ -1,8 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages and .js file.
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./generateMD");
 
+// function that writes the README.md file, and console logs the error or "Success!" if it was written without error.
 function writeToFile(data) {
     fs.writeFile("README.md", data, (err) =>
     err ? console.log(err) : console.log("Success!")
@@ -12,7 +13,7 @@ function writeToFile(data) {
 function init () {
     questions();
 };
-// TODO: Create an array of questions for user input
+// Array of questions asked inside of terminal
 const questions = () => {
     return inquirer.prompt([
 {
@@ -65,10 +66,10 @@ const questions = () => {
 },
 ])
 .then((data) => {
-    const turtle = generateMarkdown(data);
-    writeToFile(turtle)
+    const info = generateMarkdown(data);
+    writeToFile(info)
 });
-// TODO: Create a function to write README file
+
 }
 
 init();

@@ -1,6 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
+// Function that will give you the Badge for the license selected or return an empty string if none were selected.
 function renderLicenseBadge(license) {
     if (license !== undefined){
     return `[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`
@@ -9,6 +7,7 @@ function renderLicenseBadge(license) {
     }
 }
 
+// Function that will give you a link for the license selected in the license area or returns an empty string if none were selected.
 function renderLicenseLink(license){
     if (license !== undefined){
         return `[${license}](https://opensource.org/licenses/${license})`
@@ -18,8 +17,8 @@ function renderLicenseLink(license){
 }
 
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
+// A function that returns the copyright information for the licenses selected in the license area or returns an empty string if none were selected.
 function renderLicenseSection(license) {
     let section = ''
     if (license === "MIT") {
@@ -54,10 +53,9 @@ function renderLicenseSection(license) {
 
 }
 
-// TODO: Create a function to generate markdown for README
+// Function that generates the information that will be written to the README.md.
 function generateMarkdown({title, description, installation, usage, contributing, test, license, question, email}) {
     license = license[0]
-    console.log(license)
     return `# ${title}
 
   ${renderLicenseBadge(license)}
@@ -103,7 +101,7 @@ function generateMarkdown({title, description, installation, usage, contributing
   
   
   ## Questions
-  <a href="#questions"></a>
+
   If you have any questions about the project please contact me at.
   - [GitHub](https://github.com/${question}?tab=repositories)
   - Email: ${email}
