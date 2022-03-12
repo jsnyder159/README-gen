@@ -3,7 +3,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  I created a generator that will take in information from the terminal using NODE.js and will create the README.md file.  I made this to stream line README.md generation for all projects in a professional manner.  Users looking for a more professional README layout can use this to help creatre quick, easy, and professional looking README files.
+  I created a generator that will take in information from the terminal using NODE.js and will create the README.md file.  I made this to stream line README.md generation for all projects in a professional manner.  Users looking for a more professional README layout can use this to help create quick, easy, and professional looking README files.
   
   ## Table of Contents
   
